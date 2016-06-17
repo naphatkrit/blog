@@ -1,0 +1,21 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+title: Naphat Sanguansin
+email: naphat.krit@gmail.com
+description: > # this means to ignore newlines until "baseurl:"
+  Hi! Welcome to my own personal website! This is where I blog random notes
+  that I want to find again later and think may be useful for other people.
+  If you are a recruiter, please see ______ (TODO).
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "http://naphats.com" # the base hostname & protocol for your site
+twitter_username: naphatkrit
+github_username:  naphatkrit
+
+# Build settings
+markdown: kramdown
