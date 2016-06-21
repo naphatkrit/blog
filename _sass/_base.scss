@@ -154,6 +154,7 @@ pre {
     margin-left: auto;
     padding-right: $spacing-unit;
     padding-left: $spacing-unit;
+    padding-top: $spacing-unit;
     @extend %clearfix;
 
     @include media-query($on-laptop) {
@@ -195,4 +196,13 @@ pre {
             fill: $grey-color;
         }
     }
+}
+
+
+/**
+ * Shadow
+ */
+.shadow {
+    -webkit-box-shadow: 0 8px 17px 0 rgba(0,0,0,.2),0 6px 20px 0 rgba(0,0,0,.19);
+    box-shadow: 0 8px 17px 0 rgba(0,0,0,.2),0 6px 20px 0 rgba(0,0,0,.19);
 }
