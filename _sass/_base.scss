@@ -155,17 +155,12 @@ pre {
     max-width:         calc(#{$content-width} - (#{$spacing-unit} * 2));
     margin-right: auto;
     margin-left: auto;
-    padding-right: $spacing-unit;
-    padding-left: $spacing-unit;
-    padding-top: $spacing-unit;
     @extend %clearfix;
-    background-color: white;
+
 
     @include media-query($on-laptop) {
         max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit}));
         max-width:         calc(#{$content-width} - (#{$spacing-unit}));
-        padding-right: $spacing-unit / 2;
-        padding-left: $spacing-unit / 2;
     }
 }
 
@@ -204,9 +199,24 @@ pre {
 
 
 /**
- * Shadow
+ * Sheet
  */
-.shadow {
+.sheet {
     -webkit-box-shadow: 0 8px 17px 0 rgba(0,0,0,.2),0 6px 20px 0 rgba(0,0,0,.19);
     box-shadow: 0 8px 17px 0 rgba(0,0,0,.2),0 6px 20px 0 rgba(0,0,0,.19);
+    padding: $spacing-unit;
+    background-color: white;
+
+    margin-bottom: $spacing-unit;
+
+    @include media-query($on-laptop) {
+        padding: $spacing-unit / 2;
+    }
+}
+
+/**
+ * Miscellaneous
+ */
+.no-padding {
+    padding: 0;
 }
