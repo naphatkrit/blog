@@ -16,7 +16,6 @@ dl, dd, ol, ul, figure {
 body {
     font: $base-font-weight #{$base-font-size}/#{$base-line-height} $base-font-family;
     color: $text-color;
-    background-color: $background-color;
     -webkit-text-size-adjust: 100%;
     -webkit-font-feature-settings: "kern" 1;
     -moz-font-feature-settings: "kern" 1;
@@ -24,6 +23,10 @@ body {
     font-feature-settings: "kern" 1;
     font-kerning: normal;
     padding-top: 50px; // bootstrap navbar is 50px by default
+
+    background-image: $background-image;
+    background-repeat: repeat;
+    background-attachment: fixed;
 }
 
 
@@ -156,6 +159,7 @@ pre {
     padding-left: $spacing-unit;
     padding-top: $spacing-unit;
     @extend %clearfix;
+    background-color: white;
 
     @include media-query($on-laptop) {
         max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit}));
