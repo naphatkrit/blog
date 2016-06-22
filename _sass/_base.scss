@@ -29,6 +29,34 @@ body {
     background-attachment: fixed;
 }
 
+h1, h2, h3, h4, h5, h6, .heading {
+    font-family: $heading-font-family;
+    font-weight: $base-font-weight;
+}
+
+h1 {
+    font-size: 32px;
+    color: $text-color;
+    @include media-query($on-laptop) {
+        font-size: 28px;
+    }
+}
+
+h2 {
+    font-size: 24px;
+    color: lighten($text-color, 20%);
+    @include media-query($on-laptop) {
+        font-size: 20px;
+    }
+}
+
+h3 {
+    font-size: 18px;
+    color: lighten($text-color, 30%);
+    @include media-query($on-laptop) {
+        font-size: 16px;
+    }
+}
 
 
 /**
