@@ -89,3 +89,19 @@ permalink: /profile/
         {% include work_item.html work=work %}
     {% endfor %}
 </div>
+
+<!-- Projects -->
+<div class="sheet no-padding">
+    <div class="padding-top-1 padding-right-1 padding-left-1">
+        <h1 class="inline-block">Projects</h1>
+        {% assign remaining = site.data.projects.size | minus: site.data.profile.projects_shown %}
+        {% if remaining > 0 %}
+            {% assign projects_page = site.pages | where: "id", "projects" | sample %}
+            <a href="{{ projects_page.url | prepend: site.baseurl }}" class="margin-left-1">See all ({{ remaining }} hidden)</a>
+        {% endif %}
+    </div>
+    {% for project in site.data.projects limit: site.data.profile.projects_shown %}
+        <div class="horizontal-line margin-left-1 margin-right-1"></div>
+        {% include project_item.html project=project %}
+    {% endfor %}
+</div>

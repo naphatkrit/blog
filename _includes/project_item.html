@@ -1,0 +1,19 @@
+<div class="row no-margin">
+    <div class="col-sm-4 text-center padding-all-1">
+        <h2>{{ include.project.name }}</h2>
+        <p>
+            {{ include.project.period }}
+        </p>
+        {% for link in include.project.links %}
+            <a href="{{ link[1] }}">&lt{{ link[0] }}&gt</a>
+        {% endfor %}
+    </div>
+    <div class="col-sm-8 padding-all-1">
+        <em>{{ include.project.description }}</em>
+        <ul>
+            {% for content in include.project.content %}
+                <li>{{content}}</li>
+            {% endfor %}
+        </ul>
+    </div>
+</div>

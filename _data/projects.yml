@@ -1,0 +1,55 @@
+-
+    name: TigerHost
+    period: Jan. 2016 - June 2016
+    description: TigerHost is a Heroku-inspired deployment service that can be run by a university organization and so can be free for students.
+    links:
+        - [source, "https://github.com/naphatkrit/TigerHost"]
+    content:
+        - Developed both the server and command-line client, with a well-defined API to the open-sourced project Deis to actually run applications.
+        - Implemented an add-on system based on Docker.
+-
+    name: EasyCI
+    period: Aug. 2015 - Sept. 2015
+    description: EasyCI brings the benefits of a continuous integration server to developers who do not have the resources to maintain a CI server or pay for a CI service.
+    links:
+        - [source, "https://github.com/naphatkrit/easyci"]
+        - [PyPI, "https://pypi.python.org/pypi/easyci/"]
+    content:
+        - EasyCI works via git pre-commit and pre-push hooks to ensure that the current state of a project has passing test results before allowing a commit/push.
+        - By running tests locally, EasyCI does not depend on a separate server, requires minimal setup, and is free to use.
+-
+    name: ReCal
+    period: Jan. 2014 - June 2016
+    description: Originally a class project, ReCal became an easy-to-use course planning tool that is in use by over 1/3 of the active student body at Princeton University (as of June 2016).
+    links:
+        - [live, "http://recal.io"]
+    content:
+        - Worked with a team of student developers for over 2 years to bring the best experience to students.
+        - (Original project, not live) Developed the front-end JavaScript web app with advanced features such as drag-and-drop, snap-to-sidebar, and offline capabilities.
+        - (Course Selection) Developed an iOS application in Swift, allowing people to do course selection natively on mobile for the first time in Princeton.
+        - (Course Selection) Cleaned up the server infrastructure to minimize repo size and reduce deploy time.
+        - (Course Selection) Revamped the scraping of course information into the ReCal database to make the process atomic and automatic.
+-
+    name: World of E
+    period: Oct. 2012 - May 2014
+    description: World of E is a collaborative effort between Princeton’s two biggest entrepreneurship organizations that aims to centralize the various entrepreneurial resources on campus in one accessible location.
+    links: []
+    content:
+        - Developed an iOS app with a fun, unique design that launched in October 2013 at TEDxPrincetonU.
+        - Co-led the original project, organizing meetings involving designers and officers from both clubs. Led an initiative to expand to other platforms.
+-
+    name: Princeton Traveler
+    period: Jan. - Feb. 2014
+    description: The Princeton Traveler is an online magazine dedicated to inspire students to travel and discover the world.
+    links:
+        - [live, "http://princetontraveler.com"]
+    content:
+        - Developed the backend infrastructure from scratch to support UI-based content editing.
+-
+    name: Princeton Social Entrepreneurship Initiative
+    period: June - Dec. 2013
+    description: PSEI is a family of students, alumni, faculty, and friends who, together, are changing the world for the better.
+    links: []
+    content:
+        - Redesigned the organization website to replace the old static, HTML-based source code.
+        - Developed an MVC-based framework in PHP.
