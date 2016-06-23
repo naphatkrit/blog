@@ -250,6 +250,20 @@ pre {
     margin: 0;
 }
 
+.margin-left-1 {
+    margin-left: $spacing-unit;
+    @include media-query($on-laptop) {
+        margin-left: $spacing-unit / 2;
+    }
+}
+
+.margin-right-1 {
+    margin-right: $spacing-unit;
+    @include media-query($on-laptop) {
+        margin-right: $spacing-unit / 2;
+    }
+}
+
 .no-padding {
     padding: 0;
 }
@@ -277,4 +291,9 @@ pre {
 
 .text-center {
     text-align: center;
+}
+
+.horizontal-line {
+    height: 1px;
+    background-color: $grey-color-light;
 }

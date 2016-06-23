@@ -1,0 +1,27 @@
+-
+    company: Dropbox
+    position: Software Developer
+    location: San Francisco, CA
+    period: August 2016 - now
+    content:
+        - Accepted a full-time offer, starting in August 2016
+-
+    company: Dropbox
+    position: Software Development Intern
+    location: San Francisco, CA
+    period: Summer 2015
+    content:
+        - Built a commit queueing service that talks to the company’s continuous integration server and only lets a commit through if it results in a green build.
+        - Worked extensively with the git version control system to make the queueing service as seamless and reliable as possible.
+        - Contributed to the company’s open-sourced CI system, Changes.
+        - Built a universal search for internal wikis.
+-
+    company: Microsoft Corporation
+    position: Software Development Engineering Intern
+    location: Redmond, WA
+    period: Summer 2014
+    content:
+        - Worked in Microsoft Dynamics CRM to implement a new, modern-looking UI, expected to be shipped in the next release.
+        - Used a combination of Script# and TypeScript to write maintainable front-end code.
+        - Refactored UI library for better extensibility.
+        - Updated UI with support for accessibility features such as a screen reader.

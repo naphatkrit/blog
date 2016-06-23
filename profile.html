@@ -76,3 +76,31 @@ permalink: /profile/
         </div>
     {% endfor %}
 </div>
+
+<!-- Work -->
+<div class="sheet no-padding">
+    {% for work in site.data.work %}
+        <div class="row no-margin">
+            <div class="col-sm-4 text-center padding-all-1">
+                <h2>{{ work.company }}</h2>
+                <h3>{{ work.position }}</h3>
+                <p>
+                    {{ work.location }}
+                    <br>
+                    {{ work.period }}
+                </p>
+            </div>
+            <div class="col-sm-8 padding-all-1">
+                <ul>
+                    {% for content in work.content %}
+                        <li>{{content}}</li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+        {% if work != site.data.work.last %}
+            <div class="horizontal-line margin-left-1 margin-right-1">
+            </div>
+        {% endif %}
+    {% endfor %}
+</div>
