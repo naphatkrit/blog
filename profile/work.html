@@ -1,0 +1,16 @@
+---
+id: work
+layout: default
+title: Work Experience
+permalink: /profile/work/
+---
+
+<div class="sheet no-padding">
+    <div class="padding-top-1 padding-right-1 padding-left-1">
+        <h1 class="inline-block">Work Experience</h1>
+    </div>
+    {% for work in site.data.work %}
+        <div class="horizontal-line margin-left-1 margin-right-1"></div>
+        {% include work_item.html work=work %}
+    {% endfor %}
+</div>
