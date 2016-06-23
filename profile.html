@@ -75,7 +75,15 @@ permalink: /profile/
 
 <!-- Work -->
 <div class="sheet no-padding">
-    {% for work in site.data.work %}
+    <div class="padding-top-1 padding-right-1 padding-left-1">
+        <h1 class="inline-block">Work Experience</h1>
+        {% assign remaining = site.data.work.size | minus: site.data.profile.work_shown %}
+        {% if remaining > 0 %}
+            <a href="#" class="margin-left-1">See all ({{ remaining }} remaining)</a>
+        {% endif %}
+    </div>
+    <div class="horizontal-line margin-left-1 margin-right-1"></div>
+    {% for work in site.data.work limit: site.data.profile.work_shown %}
         <div class="row no-margin">
             <div class="col-sm-4 text-center padding-all-1">
                 <h2>{{ work.company }}</h2>

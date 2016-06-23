@@ -289,6 +289,20 @@ pre {
     }
 }
 
+.padding-left-1 {
+    padding-left: $spacing-unit;
+    @include media-query($on-laptop) {
+        padding-left: $spacing-unit / 2;
+    }
+}
+
+.padding-right-1 {
+    padding-right: $spacing-unit;
+    @include media-query($on-laptop) {
+        padding-right: $spacing-unit / 2;
+    }
+}
+
 .text-center {
     text-align: center;
 }
@@ -296,4 +310,8 @@ pre {
 .horizontal-line {
     height: 1px;
     background-color: $grey-color-light;
+}
+
+.inline-block {
+    display: inline-block;
 }
