@@ -245,6 +245,36 @@ pre {
 /**
  * Miscellaneous
  */
+
+.no-margin {
+    margin: 0;
+}
+
 .no-padding {
     padding: 0;
+}
+
+.padding-all-1 {
+    padding: $spacing-unit;
+    @include media-query($on-laptop) {
+        padding: $spacing-unit / 2;
+    }
+}
+
+.padding-top-1 {
+    padding-top: $spacing-unit;
+    @include media-query($on-laptop) {
+        padding-top: $spacing-unit / 2;
+    }
+}
+
+.padding-top-2 {
+    padding-top: $spacing-unit * 2;
+    @include media-query($on-laptop) {
+        padding-top: $spacing-unit;
+    }
+}
+
+.text-center {
+    text-align: center;
 }

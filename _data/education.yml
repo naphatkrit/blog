@@ -1,0 +1,22 @@
+- school: Princeton University
+  year: 2016
+  location: Princeton, NJ
+  degree: Bachelor of Science in Engineering, Computer Science
+  gpa: 3.94
+  honors:
+      - <em>Summa Cum Laude</em>
+      - Phi Beta Kappa
+      - Tau Beta Phi
+      - Sigma Xi
+      - Shapiro Prize 2013-2014
+      - Accenture Award
+      - Outstanding Senior Researcher
+  coursework:
+      - Algorithms and Data Structures
+      - Advanced Programming Technique
+      - Artificial Intelligence
+      - Functional Programming
+      - Information Security
+      - Information Signals
+      - Introduction to Quantum Computing
+      - Operating Systems
