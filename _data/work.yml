@@ -25,3 +25,11 @@
         - Used a combination of Script# and TypeScript to write maintainable front-end code.
         - Refactored UI library for better extensibility.
         - Updated UI with support for accessibility features such as a screen reader.
+-
+    company: Wealth Management System, Ltd.
+    position: Software Intern
+    location: Bangkok, Thailand
+    period: Summer 2013
+    content:
+        - Developed a prototype iOS app as an alternative to the company’s existing HTML5-based app. The app is now stored for future reference.
+        - Enhanced existing Android and iOS HTML5-based apps by adding push notifications, now live on the respective stores.
