@@ -29,6 +29,19 @@ body {
     background-attachment: fixed;
 }
 
+li.bar-list {
+    list-style: none;
+}
+
+li.bar-list:before {
+    content: "|";
+    position: relative;
+    left: -20px;
+    margin-left: -4px;
+    color: $grey-color-light;
+    vertical-align: middle;
+}
+
 h1, h2, h3, h4, h5, h6, .heading {
     font-family: $heading-font-family;
     font-weight: $base-font-weight;

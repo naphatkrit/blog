@@ -37,14 +37,14 @@ permalink: /profile/
                     <div class="col-xs-6">
                         <ul>
                             {% for honor in education.honors limit: mid_loop %}
-                                <li>{{ $honor }}</li>
+                                <li class="bar-list">{{ $honor }}</li>
                             {% endfor %}
                         </ul>
                     </div>
                     <div class="col-xs-6">
                         <ul>
                             {% for honor in education.honors offset: mid_loop %}
-                                <li>{{ $honor }}</li>
+                                <li class="bar-list">{{ $honor }}</li>
                             {% endfor %}
                         </ul>
                     </div>
@@ -57,14 +57,14 @@ permalink: /profile/
                     <div class="col-xs-6">
                         <ul>
                             {% for coursework in education.coursework limit: mid_loop %}
-                                <li>{{ $coursework }}</li>
+                                <li class="bar-list">{{ $coursework }}</li>
                             {% endfor %}
                         </ul>
                     </div>
                     <div class="col-xs-6">
                         <ul>
                             {% for coursework in education.coursework offset: mid_loop %}
-                                <li>{{ $coursework }}</li>
+                                <li class="bar-list">{{ $coursework }}</li>
                             {% endfor %}
                         </ul>
                     </div>
