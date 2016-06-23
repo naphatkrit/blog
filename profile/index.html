@@ -81,7 +81,7 @@ permalink: /profile/
         {% assign remaining = site.data.work.size | minus: site.data.profile.work_shown %}
         {% if remaining > 0 %}
             {% assign work_page = site.pages | where: "id", "work" | sample %}
-            <a href="{{ work_page.url | prepend: site.baseurl }}" class="margin-left-1">See all ({{ remaining }} remaining)</a>
+            <a href="{{ work_page.url | prepend: site.baseurl }}" class="margin-left-1">See all ({{ remaining }} hidden)</a>
         {% endif %}
     </div>
     {% for work in site.data.work limit: site.data.profile.work_shown %}
