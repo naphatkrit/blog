@@ -30,44 +30,40 @@ permalink: /profile/
                 GPA: {{ education.gpa }}<br>
 
                 <!-- Honors -->
-                {% assign loop_end = education.honors.size | minus: 1 %}
-                {% assign mid_loop = loop_end | divided_by: 2 %}
-                {% assign mid_loop_start = mid_loop | plus: 1 %}
+                {% assign mid_loop = education.honors.size | plus: 1 | divided_by: 2 %}
                 Honors:
                 <div class="row">
                     <div class="col-xs-6">
                         <ul>
-                            {% for i in (0..mid_loop) %}
-                                <li>{{ education.honors[i] }}</li>
+                            {% for honor in education.honors limit: mid_loop %}
+                                <li>{{ $honor }}</li>
                             {% endfor %}
                         </ul>
                     </div>
                     <div class="col-xs-6">
                         <ul>
-                            {% for i in (mid_loop_start...loop_end) %}
-                                <li>{{ education.honors[i] }}</li>
+                            {% for honor in education.honors offset: mid_loop %}
+                                <li>{{ $honor }}</li>
                             {% endfor %}
                         </ul>
                     </div>
                 </div>
 
                 <!-- Coursework -->
-                {% assign loop_end = education.coursework.size | minus: 1 %}
-                {% assign mid_loop = loop_end | divided_by: 2 %}
-                {% assign mid_loop_start = mid_loop | plus: 1 %}
+                {% assign mid_loop = education.coursework.size | plus: 1 | divided_by: 2 %}
                 Coursework:
                 <div class="row">
                     <div class="col-xs-6">
                         <ul>
-                            {% for i in (0..mid_loop) %}
-                                <li>{{ education.coursework[i] }}</li>
+                            {% for coursework in education.coursework limit: mid_loop %}
+                                <li>{{ $coursework }}</li>
                             {% endfor %}
                         </ul>
                     </div>
                     <div class="col-xs-6">
                         <ul>
-                            {% for i in (mid_loop_start...loop_end) %}
-                                <li>{{ education.coursework[i] }}</li>
+                            {% for coursework in education.coursework offset: mid_loop %}
+                                <li>{{ $coursework }}</li>
                             {% endfor %}
                         </ul>
                     </div>
