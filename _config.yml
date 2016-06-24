@@ -18,6 +18,14 @@ url: "http://naphats.com" # the base hostname & protocol for your site
 twitter_username: naphatkrit
 github_username:  naphatkrit
 top_page_ids: [blog, profile]
+defaults:
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+      type: "posts"
+    values:
+      layout: "post"
+      navbar_active: blog
 
 # Build settings
 markdown: kramdown

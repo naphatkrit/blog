@@ -21,7 +21,7 @@
                 {% for id in site.top_page_ids %}
                     {% assign my_page = site.pages | where: "id", id | sample %}
                     {% if my_page.title %}
-                        <li><a href="{{ my_page.url | prepend: site.baseurl }}" class="heading">{{ my_page.title }}</a></li>
+                        <li class="{% if my_page.id == page.navbar_active %} active {% endif %}"><a href="{{ my_page.url | prepend: site.baseurl }}" class="heading">{{ my_page.title }}</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>

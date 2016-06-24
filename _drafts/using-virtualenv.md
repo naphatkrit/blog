@@ -1,5 +1,4 @@
 ---
-layout: post
 tags: [tutorials, python]
 ---
 Whether you use pip or easy_install to install Python packages, odds are you have
