@@ -1,6 +1,6 @@
 -
     name: TigerHost
-    period: Jan. 2016 - June 2016
+    period: Jan 2016 - June 2016
     description: TigerHost is a Heroku-inspired deployment service that can be run by a university organization and so can be free for students.
     links:
         - [source, "https://github.com/naphatkrit/TigerHost"]
@@ -9,7 +9,7 @@
         - Implemented an add-on system based on Docker.
 -
     name: EasyCI
-    period: Aug. 2015 - Sept. 2015
+    period: Aug 2015 - Sept 2015
     description: EasyCI brings the benefits of a continuous integration server to developers who do not have the resources to maintain a CI server or pay for a CI service.
     links:
         - [source, "https://github.com/naphatkrit/easyci"]
@@ -19,7 +19,7 @@
         - By running tests locally, EasyCI does not depend on a separate server, requires minimal setup, and is free to use.
 -
     name: ReCal
-    period: Jan. 2014 - June 2016
+    period: Jan 2014 - June 2016
     description: Originally a class project, ReCal became an easy-to-use course planning tool that is in use by over 1/3 of the active student body at Princeton University (as of June 2016).
     links:
         - [live, "http://recal.io"]
@@ -31,7 +31,7 @@
         - (Course Selection) Revamped the scraping of course information into the ReCal database to make the process atomic and automatic.
 -
     name: World of E
-    period: Oct. 2012 - May 2014
+    period: Oct 2012 - May 2014
     description: World of E is a collaborative effort between Princeton’s two biggest entrepreneurship organizations that aims to centralize the various entrepreneurial resources on campus in one accessible location.
     links: []
     content:
@@ -39,7 +39,7 @@
         - Co-led the original project, organizing meetings involving designers and officers from both clubs. Led an initiative to expand to other platforms.
 -
     name: Princeton Traveler
-    period: Jan. - Feb. 2014
+    period: Jan - Feb 2014
     description: The Princeton Traveler is an online magazine dedicated to inspire students to travel and discover the world.
     links:
         - [live, "http://princetontraveler.com"]
@@ -47,7 +47,7 @@
         - Developed the backend infrastructure from scratch to support UI-based content editing.
 -
     name: Princeton Social Entrepreneurship Initiative
-    period: June - Dec. 2013
+    period: June - Dec 2013
     description: PSEI is a family of students, alumni, faculty, and friends who, together, are changing the world for the better.
     links: []
     content:
