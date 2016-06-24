@@ -10,9 +10,11 @@ title: Naphat Sanguansin
 subtitle: Software Developer; Tech Enthusiast
 email: naphat.krit@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  Hi! Welcome to my own personal website! This is where I blog random notes
-  that I want to find again later and think may be useful for other people.
-  If you are a recruiter, please see ______ (TODO).
+  Hi! Welcome to my own personal website! This is where I write random notes
+  that I want to find again later and think may be useful for other people - see [my blog](/blog).
+
+
+  If you are a recruiter, please see [my profile](/profile).
 copyright: >
   © 2016 Naphat Sanguansin. All rights reserved.
 
