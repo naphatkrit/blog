@@ -22,7 +22,7 @@ body {
     -o-font-feature-settings: "kern" 1;
     font-feature-settings: "kern" 1;
     font-kerning: normal;
-    padding-top: 50px; // bootstrap navbar is 50px by default
+    padding-top: $navbar-height; // bootstrap navbar is 50px by default
 
     background-image: $background-image;
     background-repeat: repeat;
@@ -364,4 +364,13 @@ pre {
 
 .inline-block {
     display: inline-block;
+}
+
+// This deals with having a fixed navigation bar when we go to some-page.html#some-id
+.id-target:before {
+    display: block;
+    content: " ";
+    margin-top: -$navbar-height;
+    height: $navbar-height;
+    visibility: hidden;
 }

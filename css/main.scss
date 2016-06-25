@@ -34,6 +34,10 @@ $h1-size:          28px;
 $h2-size:          22px;
 $h3-size:          16px;
 
+// this doesn't set the nav bar height, but tells
+// the rest of the page how high the navbar is.
+$navbar-height:    50px; // bootstrap's default
+
 // Width of the content area
 $content-width:    800px;
 

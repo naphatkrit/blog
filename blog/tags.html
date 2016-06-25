@@ -1,0 +1,21 @@
+---
+id: tags
+layout: default
+title: All Tags
+permalink: /blog/tags/
+navbar_active: blog
+---
+
+<div class="sheet">
+
+    <h1>All Tags</h1>
+    <div class="horizontal-line"></div>
+    {% for tag in site.tags %}
+        <h2 id="{{ tag[0] | slugify }}" class="margin-top-1 id-target">{{ tag[0] }}</h2>
+        <ul>
+        {% for post in tag[1] %}
+            <li class="bar-list"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></li>
+        {% endfor %}
+        </ul>
+    {% endfor %}
+</div>
