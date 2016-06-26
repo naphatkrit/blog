@@ -2,7 +2,6 @@
 id: blog
 layout: default
 title: Blog
-permalink: /blog/
 navbar_active: blog
 ---
 
@@ -12,7 +11,7 @@ navbar_active: blog
     <div class="horizontal-line"></div>
 
     <ul class="post-list">
-        {% for post in site.posts %}
+        {% for post in paginator.posts %}
             <li>
 
                 <h2 class="no-margin margin-top-1">
@@ -36,5 +35,18 @@ navbar_active: blog
     </ul>
 
     <p class="rss-subscribe">subscribe <a href="{{ " /feed.xml " | prepend: site.baseurl }}">via RSS</a></p>
+
+    <!-- Pagination links -->
+    <div class="row no-margin text-center">
+        {% if paginator.previous_page %}
+            <a href="{{ paginator.previous_page_path }}">←</a>
+        {% endif %}
+
+        <span>Page: {{ paginator.page }} of {{ paginator.total_pages }}</span>
+
+        {% if paginator.next_page %}
+            <a href="{{ paginator.next_page_path }}">→</a>
+        {% endif %}
+    </div>
 
 </div>

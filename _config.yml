@@ -27,6 +27,9 @@ url: "http://naphats.com" # the base hostname & protocol for your site
 twitter_username: naphatkrit
 github_username:  naphatkrit
 top_page_ids: [blog, profile]
+paginate: 5
+paginate_path: "/blog/:num/"
+gems: [jekyll-paginate]
 defaults:
   -
     scope:
