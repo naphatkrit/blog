@@ -10,3 +10,18 @@ layout: default
     <p>{{ site.description | markdownify }}</p>
 
 </div>
+
+<div class="sheet">
+    <h1 class="inline-block">From My Blog</h1>
+    {% assign blog_page = site.pages | where: "id", "blog" | sample %}
+    <a href="{{ blog_page.url | prepend: site.baseurl }}" class="margin-left-1">See all</a>
+
+    <ul class="post-list">
+        {% for post in site.posts limit: site.posts_in_home %}
+            <div class="horizontal-line"></div>
+            <li>
+                {% include post_item.html post=post %}
+            </li>
+        {% endfor %}
+    </ul>
+</div>

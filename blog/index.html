@@ -13,22 +13,7 @@ navbar_active: blog
     <ul class="post-list">
         {% for post in paginator.posts %}
             <li>
-
-                <h2 class="no-margin margin-top-1">
-                    <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-                </h2>
-                <span class="post-meta">
-                    {{ post.date | date: "%b %-d, %Y" }}
-
-                    {% assign tags_page = site.pages | where: "id", "tags" | sample %}
-                    {% assign tags = post.tags | sort %}
-                    {% for tag in tags %}
-                        <a href="{{ tags_page.url | prepend: site.baseurl }}#{{ tag | slugify}}" class="tag">{{ tag }}</a>
-                    {% endfor %}
-                </span>
-
-                {{ post.excerpt }}
-                <a href="{{ post.url | prepend: site.baseurl }}">Read more →</a>
+                {% include post_item.html post=post %}
             </li>
             <div class="horizontal-line"></div>
         {% endfor %}

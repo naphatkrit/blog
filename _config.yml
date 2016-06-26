@@ -10,10 +10,7 @@ title: Naphat Sanguansin
 subtitle: Software Developer; Tech Enthusiast
 email: naphat.krit@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  Hi! Welcome to my own personal website!
-
-
-  I will be writing random notes that I want to find again later and think may be useful for other people - see [my blog](/blog) for that.
+  Hi! Welcome to my personal website! I will be writing random notes that I want to find again later and think may be useful for other people.
 
 
   If you'd like to learn more about me (work experience, projects, etc.), please see [my profile](/profile).
@@ -26,6 +23,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://naphats.com" # the base hostname & protocol for your site
 twitter_username: naphatkrit
 github_username:  naphatkrit
+posts_in_home: 1
 top_page_ids: [blog, profile]
 paginate: 5
 paginate_path: "/blog/:num/"

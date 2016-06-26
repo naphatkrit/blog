@@ -1,0 +1,15 @@
+<h2 class="no-margin margin-top-1">
+    <a href="{{ include.post.url | prepend: site.baseurl }}">{{ include.post.title }}</a>
+</h2>
+<span class="post-meta">
+    {{ include.post.date | date: "%b %-d, %Y" }}
+
+    {% assign tags_page = site.pages | where: "id", "tags" | sample %}
+    {% assign tags = include.post.tags | sort %}
+    {% for tag in tags %}
+        <a href="{{ tags_page.url | prepend: site.baseurl }}#{{ tag | slugify}}" class="tag">{{ tag }}</a>
+    {% endfor %}
+</span>
+
+{{ include.post.excerpt }}
+<a href="{{ include.post.url | prepend: site.baseurl }}">Read more →</a>
