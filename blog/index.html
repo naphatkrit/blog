@@ -22,7 +22,8 @@ navbar_active: blog
                     {{ post.date | date: "%b %-d, %Y" }}
 
                     {% assign tags_page = site.pages | where: "id", "tags" | sample %}
-                    {% for tag in post.tags %}
+                    {% assign tags = post.tags | sort %}
+                    {% for tag in tags %}
                         <a href="{{ tags_page.url | prepend: site.baseurl }}#{{ tag | slugify}}" class="tag">{{ tag }}</a>
                     {% endfor %}
                 </span>
