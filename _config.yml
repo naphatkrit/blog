@@ -20,7 +20,7 @@ copyright: >
 
   Made using [Jekyll](https://jekyllrb.com/) and [Bootstrap](http://getbootstrap.com/). Typeface by [DejaVu Sans Mono](https://www.fontsquirrel.com/fonts/dejavu-sans-mono) and [Source Sans Pro](https://www.google.com/fonts/specimen/Source+Sans+Pro).
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://naphats.com" # the base hostname & protocol for your site
+url: "https://naphats.com" # the base hostname & protocol for your site
 twitter_username: naphatkrit
 github_username:  naphatkrit
 posts_in_home: 1
