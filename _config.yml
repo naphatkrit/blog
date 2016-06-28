@@ -18,7 +18,7 @@ copyright: >
   © 2016 Naphat Sanguansin. All rights reserved.
 
 
-  Made using [Jekyll](https://jekyllrb.com/) and [Bootstrap](http://getbootstrap.com/). Typeface by [DejaVu Sans Mono](https://www.fontsquirrel.com/fonts/dejavu-sans-mono) and [Source Sans Pro](https://www.google.com/fonts/specimen/Source+Sans+Pro).
+  Made using [Jekyll](https://jekyllrb.com/){:target="_blank"} and [Bootstrap](http://getbootstrap.com/){:target="_blank"}. Typeface by [DejaVu Sans Mono](https://www.fontsquirrel.com/fonts/dejavu-sans-mono){:target="_blank"} and [Source Sans Pro](https://www.google.com/fonts/specimen/Source+Sans+Pro){:target="_blank"}.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://naphats.com" # the base hostname & protocol for your site
 twitter_username: naphatkrit
