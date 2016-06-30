@@ -23,7 +23,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://naphats.com" # the base hostname & protocol for your site
 twitter_username: naphatkrit
 github_username:  naphatkrit
-posts_in_home: 1
+posts_in_home: 2
 top_page_ids: [blog, profile]
 paginate: 5
 paginate_path: "/blog/:num/"
