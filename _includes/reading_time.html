@@ -1,0 +1,8 @@
+{% assign words = include.content | strip_html | number_of_words %}
+{% assign half_reading_speed = site.reading_speed | divided_by: 2 %}
+{% assign time = words | plus: half_reading_speed | divided_by: site.reading_speed %}
+{% if time <= 1 %}
+    1 min read
+{% else %}
+    {{ time }} min read
+{% endif %}

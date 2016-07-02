@@ -4,6 +4,8 @@
 <span class="post-meta">
     {{ include.post.date | date: "%b %-d, %Y" }}
 
+    • <span> {% include reading_time.html content=post.content %} </span>
+
     {% assign tags_page = site.pages | where: "id", "tags" | sample %}
     {% assign tags = include.post.tags | sort %}
     {% for tag in tags %}
