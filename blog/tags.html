@@ -17,7 +17,7 @@ navbar_active: blog
             {% if tag[0] == cur_tag %}
                 <h2 id="{{ tag[0] | slugify }}" class="margin-top-1 id-target">{{ tag[0] }}</h2>
                 <ul>
-                {% for post in tag[1] %}
+                {% for post in tag[1] reversed %}
                     <li class="bar-list"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></li>
                 {% endfor %}
                 </ul>
